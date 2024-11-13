@@ -1,4 +1,4 @@
-# debootcamp-project2
+
 
 ## Objective
 - The objective of our project is to provide analytical evidence to support Northwind Company’s business decisions and gain business insights.
