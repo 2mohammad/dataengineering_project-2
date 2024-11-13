@@ -1,7 +1,22 @@
 # debootcamp-project2
 
 ## Objective
-- The objective of our project is to provide analytical evidence to support Northwind Company’s business decisions and gain business insights.
+The objective of this ELT project is to provide insights into the DVD rental business operations, allowing stakeholders to make data-driven decisions. The data should empower users to:
+
+Track rental trends, including popular movies and high-demand genres
+Analyze customer behaviors, such as rental frequency and preferred rental formats
+Monitor inventory to optimize stock and ensure availability of popular titles
+Enhance marketing efforts by understanding customer demographics and preferences
+Support financial planning through revenue tracking and trend analysis
+
+##Consumers of Your Data:
+The primary consumers of the data for the DVD rental database would include:
+
+Business Analysts - For creating reports on rental performance, customer engagement, and revenue generation.
+Marketing Team - To tailor marketing campaigns based on customer demographics and rental preferences.
+Inventory Managers - For maintaining optimal stock levels based on rental demand patterns.
+Customer Service Team - To understand and improve the customer rental experience.
+Executives and Financial Planners - For high-level strategic planning, focusing on growth areas, and budget allocation.
 
 ## Questions 
 - Orders and Sales
@@ -13,8 +28,14 @@
 
 ## Source datasets
 
-![Source Database](images/source_db.png)
-![Source Database](images/northwind-er-diagram.png)
+#Datasets Selected:
+|Data source name|URL|
+|--|--|
+|DVD Rental Database| https://www.postgresqltutorial.com/postgresql-getting-started/postgresql-sample-database/|
+The DVD Rental Database includes the following datasets:
+
+<img width="329" alt="image" src="https://github.com/user-attachments/assets/573f0849-66a4-4479-8fc2-3af061a5bc36">
+
 
 ## Solution Architecture
 ![Solution Architecture](images/solution-architecture.png)
