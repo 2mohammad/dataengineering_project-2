@@ -1,0 +1,1 @@
+2024-11-14 12:41:48,736 - dvd_rental - ERROR - Pipeline failed with exception Can't load plugin: sqlalchemy.dialects:postgresql_pg8000
