@@ -1,23 +1,26 @@
 
 
 ## Objective
-- The objective of our project is to provide analytical evidence to support Northwind Company’s business decisions and gain business insights.
+- The objective of our project is to build an EC2 instance supported Airbyte Pipeline between Postgres-RDS and Snowflake. We will utilize the Dvd-Rental dataset.
 
-## Questions 
-- Orders and Sales
-    - What is the revenue trend?
-    - What are the sales performance of major countries?
-- Customer Performance
-    - How to segment customers?
-    - What are the differences between their behaviours?
-
-## Source datasets
-
-![Source Database](images/source_db.png)
-![Source Database](images/northwind-er-diagram.png)
-
-## Solution Architecture
-![Solution Architecture](images/solution-architecture.png)
+## Project Recap 
+- EC2 / Snowflake / Postgres
+    - Arguably the longest amount of time was taken on this portion of the project.
+    - We initally stuggled with proper resource provisioning of the EC2 instance.
+    - In an attempt to get the pipeline to work, we tried different approcahes
+    - Built a custom docker container for ECR
+    - Built pipelines in Fivetran
+    - Built images in Ubuntu Linux instead of Amazon Linux
+    - The collective experience and learnings here allowed us to finally figure out the error preventing us from loading to Snowflake
+    - Consequently we were able to get the Airbyte instance to setup a CDC pipeline between RDS Postgres and Snowflake
+      
+- DBT / Snowflake / Preset
+    - This was comparativly and easier part of the project
+    - DBT has an intutive setup and with CTEs setting up tables, views, and tests was a breeze
+    - The same can be said about Preset
+      
+- Databricks
+    -  Due to the length of time spent getting the EC2 instance running we did not get a chance to implemengt Databricks
 
 ## Tools Used
 ### 1. Postgresql
